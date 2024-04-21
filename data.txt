@@ -1,0 +1,24 @@
+STEP : 1
+Install javascript package (it will create package.json files)
+npm init -y 
+
+STEP : 2
+Install npm package with also typescript i.e. @types 
+npm i -D typescript @types/node @types/express @types/helmet @types/cors
+
+STEP : 3
+npm i express helmet cors
+
+STEP : 4
+Install typescript project (it will create tsconfig.json files)
+tsc --init
+
+
+tsconfig.json
+1. "target": "es2016",  
+2. "module": "commonjs", //
+3. "rootDir": "./src",   // typescript project file
+4. "outDir": "./dist",   // after compile / build typescript file to javascript file path localtion
+5. "removeComments": true, // at the time of compilation removeComments remove all the comments from ts source files
+6. "noEmitOnError": true,  // if it is true then if there any error so it will not build
+7. "sourceMap": true       // for debuggers :: Create source map files for emitted JavaScript files
